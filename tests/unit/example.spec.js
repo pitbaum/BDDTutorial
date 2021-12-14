@@ -1,12 +1,15 @@
 import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import Login from "@/views/Login.vue";
 
-describe("HelloWorld.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(HelloWorld, {
-      props: { msg },
+describe("Login.vue", () => {
+  it("it shows Success if i send valid credentials", () => {
+    const passedValid = true;
+    const wrapper = shallowMount(Login, {
+      propsData: {
+        isValid: passedValid,
+        isVisible: passedValid,
+      },
     });
-    expect(wrapper.text()).toMatch(msg);
+    expect(wrapper.html()).toContain('isvalid="true" isvisible="true"');
   });
 });
