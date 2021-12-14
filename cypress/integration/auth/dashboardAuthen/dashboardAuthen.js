@@ -34,7 +34,6 @@ Given(/^I am in the dashboard$/, () => {
 
 Then(/^I should see the dashboards contents$/, () => {
   cy.contains("Welcome");
-  cy.contains("Log out");
 });
 
 Given(/^I did not log in$/, () => {
