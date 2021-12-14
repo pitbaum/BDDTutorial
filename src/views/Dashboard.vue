@@ -6,13 +6,6 @@
   <div v-show="isValid" id="welcome">
     <span>{{ welcomeMSG }}</span>
     <span> {{ errorMSG }}</span>
-    <p></p>
-    <input
-      type="submit"
-      value="Log out"
-      v-on:click="checkLogout"
-      data-testid="logoutBtn"
-    />
   </div>
 </template>
 
@@ -44,24 +37,6 @@ export default {
       errorMSG: "",
       isValid: false, // should the page be visible.
     };
-  },
-
-  methods: {
-    async checkLogout(e) {
-      //removes the token, thus making it the non-logged in state.
-      //and sends a deletion request to the backend.
-      e.preventDefault();
-      if (VueCookies.isKey("token")) {
-        let payload = { token: VueCookies.get("token").token };
-        const env = this; //need the environement in the axios.
-        await axios.post("/dashboard", payload).then(function (response) {
-          if (response.status === 201) {
-            VueCookies.remove("token");
-            env.$router.push("/login");
-          } else env.errorMSg = response.status + " seems the like the server couldnt be reached";
-        });
-      } else this.$router.push("/login");
-    },
-  },
+  }
 };
 </script>
