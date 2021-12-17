@@ -1,4 +1,4 @@
-# app2
+# BDD Tutorial
 
 ## Project setup
 ```
