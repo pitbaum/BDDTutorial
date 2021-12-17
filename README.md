@@ -1,29 +1,15 @@
-# app2
+# BDD tutorial
 
-## Project setup
-```
-npm install
-```
+## Features and Testing with Cypress
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Feature files
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Implementation of tests running feature files
 
-### Run your unit tests
-```
-npm run test:unit
-```
+## Login feature
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Dashboard feature
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Logout feature
+
+## References
