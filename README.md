@@ -5,7 +5,7 @@ After having looked in the previous branch in the feature files, we will know ma
 We will now look into the contents of the integration/auth/login/login.js file, which contains the step definitions for the Cypress tests that were defined in the login.feature file.\
 Starting from the top, we will import the Cypress-preprocessor constants we used in the feature file definition, such that Cypress can read the feature files order.\
 Besides this and line 2, the whole file consists of different function definitions and their body. All the functions are of one of the three imported Cucumber types and their first argument is the name of the feature they reference to in the feature file. Like this Cypress will know which function to call at which time, since it will follow the order of the feature file.\
-Inside the functions body, we will include what the Cypress testing tool should actually try to do and check if all conditions we want the tests to include are met. If a function can fully be executed by Cypress, then the test is said to have passed.\
+Inside the functions body, we will include what the Cypress testing tool should actually try to do and check if all conditions we want the tests to include are met. If a function can fully be executed by Cypress, then the test is said to have passed.
 
 ## The example code in reference
 If we look at the structure of our first test from the feature file, we can see that the first test that will be executed at the start of the test is the background. Namely the given statement that "I am in the login page".\
