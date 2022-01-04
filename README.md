@@ -39,7 +39,7 @@ For later use we are using the additional libraries axios and VueCookies for HTT
 ```
 npm install axios 
 ```
-or respectively
+And/Or respectively
 ```
 npm install -save vue-cookies .
 ```
