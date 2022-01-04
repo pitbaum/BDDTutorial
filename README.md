@@ -49,4 +49,4 @@ For this we have created the folder tests/unit in which you can find an example 
 To explain the unit test in context of the example login function script, the login page will have to check before showing the success message or the error message after the response was received from the backend, if there was already a response received and if the response was successfully what was expected.\
 The logic is that if there was no response yet, then the webpage should not show anything and if there was a successfull response, then it should check if it was an error or a success.\
 For this we have two variables stored in our Vuescript which are there to store the boolean state of already having sent a response or not and the state if the response was successfull or not. Now to test our script to see if it behaves correctly for both variables being true, the example unit test was created.\
-Within the test we can directly mount the necessary values into the DOM and check the end contents of the webpages HTML states.\
+Within the test we can directly mount the necessary values into the DOM and check the end contents of the webpages HTML states.
