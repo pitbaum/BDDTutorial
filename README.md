@@ -35,8 +35,14 @@ For that to work we will also now create in the views/ directory a file called L
 To pass the backgorund, since we already created a route linking to the component, we only need to include an HTML paragraph containing the word Login and we will have passed the first test.\
 Now for the other tests, we would need to also add to the page two input forms and a login button, which need the correct data test ID linked to them. We need some Vue script to send out a HTTP post request when the login button is pressed and we need to be able to handle the backends response by either showing an error message or showing a success message.\
 An example of how such features could be implemented is given in this branch of the repository.\
-For later use we are using the additional libraries axios and VueCookies for HTTP post requests and Cookie handeling. if you want to run the code from this repository, please install them into your repository by running the commands: npm install axios or respectively npm install -save vue-cookies .\
-
+For later use we are using the additional libraries axios and VueCookies for HTTP post requests and Cookie handeling. if you want to run the code from this repository, please install them into your repository by running the commands:
+```
+npm install axios 
+```
+or respectively
+```
+npm install -save vue-cookies .
+```
 ## Adding unit tests
 While we have now seen how to integrate our E2E testing with a BDD workflow into our software development, we can additionally add unit testing into our workflow by using Jest.\
 For this we have created the folder tests/unit in which you can find an example unit test for the login function example.\
