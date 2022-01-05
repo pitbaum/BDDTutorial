@@ -18,6 +18,7 @@ For more references on how to write a Cypress step implementation, please visit 
 Looking at the first steps for creating a login feature with a BDD process.\
 First during our BDD process, during a discussion the stakeholders which might potentially not have the necessary technical knowledge about how a webpage works, will express their wishes of a login feature with simple descriptive sentences, which will then be translated into Given, When and Then statements that can be processed by Cucumber.\
 Let's say we want to have a login page, on which we can enter some credentials as a user and if they are correct, then we see that we have logged in to the website and if we enter some wrong credentials, then we should see an error message.\
+
 Starting from this general wish, we will now create a feature file for Cypress. The finished version of the feature file can be looked at in the file cypress/integration/auth/login.feature.\
 If we look at the contents of the file, we can see that first we give the Feature a simple name of what it is about. Then we set a background, this is something that will be the state that the Cypress test runner will try to get in before starting the actual tests. In our case the background would be to verify that the testing tool is on the login page before trying to enter some credentials.\
 
