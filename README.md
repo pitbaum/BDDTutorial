@@ -11,6 +11,8 @@ Besides this and line 2, the whole file consists of different function definitio
 
 Inside the functions body, we will include what the Cypress testing tool should try to do and check if all conditions we want the tests to include are met. If a function can fully be executed by Cypress, then the test is said to have passed.
 
+For more references on how to write Cypress step implementations, please visit the Cypress documentation page: https://docs.cypress.io/guides/
+
 ## The example code in reference
 If we look at the structure of our first test from the feature file, we can see that the first test that will be executed at the start of the test is the background. Namely the given statement that "I am in the login page".
 
