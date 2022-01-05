@@ -26,6 +26,3 @@ Not in a sub-folder, are the App.vue and the main.js file. The App.vue file is a
 Additionally there can also be sub-folder called components be added, where additional component handeling tasks with their respective components be placed, but we are only going to look into simple .vue files in this tutorial without additional component handeling.
 
 In summary, most of the work will be done in the src/ folder as for this is the place where we will put out actual implementation code for the webpage. (HTML, JS and CSS code)
-
-## References and commands
-
