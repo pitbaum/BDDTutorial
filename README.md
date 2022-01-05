@@ -20,13 +20,17 @@ Thus, we will from now on have the restriction given for letting the test pass, 
 
 Next up would be the given statement about entering correct credentials. Even though in our feature file the incorrect credential scenario was put first and will be run first, the order doesn't matter in the Cypress function definitions.
 
-So, for the valid credentials, we already assume that the background was true, and we are inside the login page. Now we tell our testing tool to find something in the html body that has the testid "email" and something that has the testid "password". It is not defined, what kind of HTML attribute they are, but we know that the testing tool will try to type a string of characters in both, namely the "good@email.com" and the "goodpassword".\
+So, for the valid credentials, we already assume that the background was true, and we are inside the login page. Now we tell our testing tool to find something in the html body that has the testid "email" and something that has the testid "password". It is not defined, what kind of HTML attribute they are, but we know that the testing tool will try to type a string of characters in both, namely the "good@email.com" and the "goodpassword".
+
 If the testing tool can do those steps, it will set the variable named valid which was globally defined in the line 2 of the code to true.\
-Now what is happening here is that if you look at the code for the invalid credentials’ scenario function, you will see that it is similar besides the names of what we put into the email and password fields and that we set the valid function to false.\
-But after this, the code will never check for what we put into the email or password fields.\
+Now what is happening here is that if you look at the code for the invalid credentials’ scenario function, you will see that it is similar besides the names of what we put into the email and password fields and that we set the valid function to false.
+
+But after this, the code will never check for what we put into the email or password fields.
+
 Shouldn't we need to test the contents of the input forms and then check them against an already existing list of registered users and create a response to the server request depending on a match of the credentials? 
 
-The answer is that this is how you would make a real backend function, but with Cypress we only try to test the frontend without a backend, so while we could indeed try to program our Cypress tests as close to the actual backend code, we could also make it simpler and easier by simplifying it.\
+The answer is that this is how you would make a real backend function, but with Cypress we only try to test the frontend without a backend, so while we could indeed try to program our Cypress tests as close to the actual backend code, we could also make it simpler and easier by simplifying it.
+
 Since we already know that our Cypress scenario contains two possible options and when which response will be given from the backend, we can directly let Cypress stub a response from the backend as true or false to the correct scenario without having to check on them.
 
 In the end the goal of our Cypress test is to see how the frontend behaves to the different kinds of user inputs and backend data. So, the logic behind how the backend would process such a query doesn't matter and we can skip the whole backend process by assuming on how the backend is expected to respond in the different scenarios.
