@@ -18,8 +18,7 @@ Within the cypress/integration/auth/ path, all the subfolders are named the same
 
 The step implementation files are in those subfolders saved as .js files. They are written in the specific way for the Cypress testing tool and all the functions are named like in the implementation file referenced by it. (Since we are using the Cucumber-preprocessor, this means all the functions are either Given, When or Then statements.)
 
-For more references on how to write a Cypress step implementation, please visit the Cypress documentation page: https://docs.cypress.io/guides/
-
+How to write a Cypress step implementation willl be discussed in the branches named after respective features.
 ## Login feature
 Looking at the first steps for creating a login feature with a BDD process.
 
