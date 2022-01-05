@@ -28,14 +28,17 @@ In general, for the feature files, there are always many ways to organize them a
 
 ## Dashboard feature
 The main idea of this feature is that there should be a dashboard route, which redirects a user that is not logged in to the login page and if a user is logged in, it should show the contents of a dashboard page.\
-Since the feature is mostly about the authentication process of a logged in feature and not about the actual features of the dashboard page, we call it dashboardAuthen.feature. If we look in the corresponding file, we can see that again, we have two scenarios, which are to either be correctly logged in as a user or not.\
-The most interesting thing in this feature file is probably that it can be very ambiguous what the state of being logged in even means. This is a good thing in communication, since the designer of the feature file would not need to know the technical tools on how to authenticate or save states in a web program. So, the implementation choice and best practice can be defined by the programmer's doing the implementation steps later.\
+Since the feature is mostly about the authentication process of a logged in feature and not about the actual features of the dashboard page, we call it dashboardAuthen.feature. If we look in the corresponding file, we can see that again, we have two scenarios, which are to either be correctly logged in as a user or not.
+
+The most interesting thing in this feature file is probably that it can be very ambiguous what the state of being logged in even means. This is a good thing in communication, since the designer of the feature file would not need to know the technical tools on how to authenticate or save states in a web program. So, the implementation choice and best practice can be defined by the programmer's doing the implementation steps later.
+
 To quickly sum up the main steps of the file, in the first scenario we assume the user is not logged in. If the route to the dashboard page is entered, the user should be redirected to the login page. Which is so far so clear from the beginning idea of the feature.\
 For the second scenario we assume the user to be in a logged in state. If that user visits the dashboard route, they should be able to stay there and have access to its content.
 
 ## Logout feature
 The idea of the logout feature will be to have the possibility for a user that is logged in to get back to the state of being logged out.\
-Since we need to assume that the user is first logged in before logging out, for this feature we will use a background again. The background will assume that the user is in a logged in state and additionally we will add to the feature that the user can log out by clicking a button that is situated on the dashboard page.\
+Since we need to assume that the user is first logged in before logging out, for this feature we will use a background again. The background will assume that the user is in a logged in state and additionally we will add to the feature that the user can log out by clicking a button that is situated on the dashboard page.
+
 Since there is only one direction the test can go, there is only one scenario in this feature file namely being that the login button is clicked, and that the user will be logged out. Since the state of being logged out is again very ambiguous, we will assume that a logged in user sees a welcome page in the dashboard and if the user is in the dashboard and logged out, they can't see that welcome page anymore. (The later comes from the assumption that the dashboardAuthen feature already works, but if that feature isn't implemented before, we would have to make sure that we include in the logout implementation we include a test that fulfills this requirement nonetheless)
 
 ## References
