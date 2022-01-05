@@ -14,7 +14,7 @@ npm install
 npm run serve
 ```
 
-### Compiles and hot-reloads for development
+### Opens Cypress E2E testing tool
 ```
 npx cypress open
 ```
