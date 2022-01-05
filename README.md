@@ -14,6 +14,11 @@ npm install
 npm run serve
 ```
 
+### Compiles and hot-reloads for development
+```
+npx cypress open
+```
+
 ### Compiles and minifies for production
 ```
 npm run build
