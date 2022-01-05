@@ -50,5 +50,3 @@ The idea of the logout feature will be to have the possibility for a user that i
 Since we need to assume that the user is first logged in before logging out, for this feature we will use a background again. The background will assume that the user is in a logged in state and additionally we will add to the feature that the user can log out by clicking a button that is situated on the dashboard page.
 
 Since there is only one direction the test can go, there is only one scenario in this feature file namely being that the login button is clicked, and that the user will be logged out. Since the state of being logged out is again very ambiguous, we will assume that a logged in user sees a welcome page in the dashboard and if the user is in the dashboard and logged out, they can't see that welcome page anymore. (The later comes from the assumption that the dashboardAuthen feature already works, but if that feature isn't implemented before, we would have to make sure that we include in the logout implementation we include a test that fulfills this requirement nonetheless)
-
-## References
