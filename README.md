@@ -1,6 +1,6 @@
 # BDD tutorial
 
-## Cypress step implementatio
+## Cypress step implementation
 After having looked in the previous branch in the feature files, we will know make those feature files into actual Cypress E2E tests.
 
 We will now look into the contents of the integration/auth/login/login.js file, which contains the step definitions for the Cypress tests that were defined in the login. feature file.
