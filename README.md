@@ -14,12 +14,15 @@ During the BDD workflow in general, the tasks, goals and results of the Software
 In the current branch of the project is a cleaned up version of a new Vue project with additional plugins for the use of BDD installed. To see a guide on how this was done step by step, please read through this article:
 
 ## The structure of the project folders
-Starting from top to bottom. The Cypress folder includes the plugins and the support, which are both folders that are necessary for configuring the behavior of Cypress, which is used for the E2E testing. Into the Cypress folder, we will also need to create a new folder when talking about the creation of features, a folder called Integrations, in which we put our BDD test feature files.\
+Starting from top to bottom. The Cypress folder includes the plugins and the support, which are both folders that are necessary for configuring the behavior of Cypress, which is used for the E2E testing. Into the Cypress folder, we will also need to create a new folder when talking about the creation of features, a folder called Integrations, in which we put our BDD test feature files.
+
 The public folder contains the files that will be publicly visible to the visitor of the webpage later, standardly it consists of a logo and a html file.
 The src folder contains the assets folder, a folder where you can save additional assets in that you want to load into the webpage, like images or graphs.
-The router folder contains the index.js file, which is a file that contains all the necessary routes that the webpage can later point to and what the DOM needs to load when for those routes.\
+The router folder contains the index.js file, which is a file that contains all the necessary routes that the webpage can later point to and what the DOM needs to load when for those routes.
+
 Not in a sub-folder, are the App.vue and the main.js file. The App.vue file is a file containing the most basic and first route that webpage will point to after having started it with the current configurations in the router and the main.js file, which loads them together and assembles the webpage after start of the server.
-Additionally there can also be sub-folder called components be added, where additional component handeling tasks with their respective components be placed, but we are only going to look into simple .vue files in this tutorial without additional component handeling.\
+Additionally there can also be sub-folder called components be added, where additional component handeling tasks with their respective components be placed, but we are only going to look into simple .vue files in this tutorial without additional component handeling.
+
 In summary, most of the work will be done in the src/ folder as for this is the place where we will put out actual implementation code for the webpage. (HTML, JS and CSS code)
 
 ## References and commands
