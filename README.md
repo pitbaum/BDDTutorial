@@ -53,4 +53,5 @@ Since there is only one direction the test can go, there is only one scenario in
 
 ## References on how to write good feature files
 https://github.com/kylecoberly/knowledge/wiki/Cypress-Cucumber
+
 https://github.com/kylecoberly/knowledge/wiki/Gherkin
