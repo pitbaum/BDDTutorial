@@ -70,7 +70,7 @@ npm install axios
 ```
 And/Or respectively
 ```
-npm install -save vue-cookies .
+npm install -save vue-cookies
 ```
 ## Adding unit tests
 While we have now seen how to integrate our E2E testing with a BDD workflow into our software development, we can additionally add unit testing into our workflow by using Jest.\
